@@ -2,6 +2,9 @@
 export const COVID_DATA_REQUEST = 'COVID_DATA_REQUEST';
 export const COVID_DATA_SUCCESS = 'COVID_DATA_SUCCESS';
 export const COVID_DATA_FAILURE = 'COVID_DATA_FAILURE';
+export const SET_SELECTED_STATE = 'SET_SELECTED_STATE';
+export const SET_SELECTED_INTERVAL = 'SET_SELECTED_INTERVAL';
+export const SET_DRILL_DOWN_DATA = 'SET_DRILL_DOWN_DATA';
 
 export const fetchCovidData = () => (dispatch) => {
   dispatch({
@@ -9,8 +12,31 @@ export const fetchCovidData = () => (dispatch) => {
     payload: {
       processAs: 'text',
       fetchArgs: [
-        'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv'
+        // https://github.com/nytimes/covid-19-data
+        // 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv'
+        '/covid_data.csv' // local
       ]
     }
+  });
+};
+
+export const setSelectedState = (selectedState) => (dispatch) => {
+  dispatch({
+    type: SET_SELECTED_STATE,
+    payload: selectedState
+  });
+};
+
+export const setSelectedInterval = (selectedInterval) => (dispatch) => {
+  dispatch({
+    type: SET_SELECTED_INTERVAL,
+    payload: selectedInterval
+  });
+};
+
+export const setDrillDownData = (selectedInterval) => (dispatch) => {
+  dispatch({
+    type: SET_DRILL_DOWN_DATA,
+    payload: selectedInterval
   });
 };

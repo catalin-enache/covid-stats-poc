@@ -1,0 +1,45 @@
+.covid-chart {
+  padding: 10px 30px 30px 30px;
+}
+.covid-chart-title {
+  margin: 30px 0px 0px 0px;
+  padding: 6px 0px 0px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+}
+.covid-chart-menu-right {
+  margin: 30px 0px 0px 10px;
+  float: right;
+}
+.covid-chart-dropdown {
+  margin: 0px 0px 0px 10px;
+  display: inline-block;
+  width: 200px;
+}
+.covid-chart-graph {
+  height: 500px;
+  margin: 30px 0px 0px 0px;
+}
+.covid-chart-drill-down {
+  margin: 30px 0px 0px 0px;
+  padding: 30px 0px 30px 0px;
+  border-top: 1px solid gray;
+}
+.covid-chart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.covid-chart-table tr:nth-child(even)  {
+  background-color: #eee;
+}
+.covid-chart-table-head-row th {
+  padding: 10px 10px 10px 10px;
+  text-align: left;
+}
+.covid-chart-table-body-row td {
+  padding: 10px 10px 10px 10px;
+}
+td.covid-chart-table-numeric-cell, th.covid-chart-table-numeric-cell {
+  text-align: right;
+}
