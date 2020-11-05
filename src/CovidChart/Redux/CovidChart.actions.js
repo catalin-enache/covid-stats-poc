@@ -13,8 +13,8 @@ export const fetchCovidData = () => (dispatch) => {
       processAs: 'text',
       fetchArgs: [
         // https://github.com/nytimes/covid-19-data
-        'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv',
-        // 'https://raw.githubusercontent.com/catalin-enache/covid-stats-poc/master/public/covid_data.csv' // saved in own repo
+        // 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv',
+        'https://raw.githubusercontent.com/catalin-enache/covid-stats-poc/master/public/covid_data.csv' // saved in own repo
         // './public/covid_data.csv' // does not work
       ]
     }
